@@ -30,8 +30,7 @@ export class PokemonService {
   }
 
   findAll() {
-    const pokemons = this.pokemonModel.find();
-    return pokemons;
+    return this.pokemonModel.find();
   }
 
   async findOne(term: string) {
